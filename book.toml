@@ -1,0 +1,6 @@
+[book]
+authors = ["Lev Knoblock"]
+language = "en"
+multilingual = false
+src = "src"
+title = "spite engines"
