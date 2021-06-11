@@ -13,7 +13,7 @@ before_script:
   - cargo install-update -a
 
 script:
-  - mdbook build . && mdbook test . && shopt -s extglob && rm -rf !('./book')
+  - mdbook build . && mdbook test . && rm -rf ./src .travis.yml README.md book.toml && mv ./book/* . && rm -rf ./book
 
 deploy:
   provider: pages
